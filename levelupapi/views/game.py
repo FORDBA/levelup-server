@@ -13,6 +13,7 @@ class Games(ViewSet):
 
     def create(self, request):
         """Handle POST operations
+
         Returns:
             Response -- JSON serialized game instance
         """
@@ -45,6 +46,7 @@ class Games(ViewSet):
 
     def retrieve(self, request, pk=None):
         """Handle GET requests for single game
+
         Returns:
             Response -- JSON serialized game instance
         """
@@ -71,6 +73,7 @@ class Games(ViewSet):
 
     def update(self, request, pk=None):
         """Handle PUT requests for a game
+
         Returns:
             Response -- Empty body with 204 status code
         """
@@ -91,6 +94,7 @@ class Games(ViewSet):
 
     def destroy(self, request, pk=None):
         """Handle DELETE requests for a single game
+
         Returns:
             Response -- 200, 404, or 500 status code
         """
@@ -108,6 +112,7 @@ class Games(ViewSet):
 
     def list(self, request):
         """Handle GET requests to games resource
+
         Returns:
             Response -- JSON serialized list of games
         """

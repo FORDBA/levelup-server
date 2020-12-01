@@ -18,6 +18,7 @@ class GameTypes(ViewSet):
 
     def retrieve(self, request, pk=None):
         """Handle GET requests for single game
+
         Returns:
             Response -- JSON serialized game instance
         """
@@ -33,6 +34,7 @@ class GameTypes(ViewSet):
 
     def list(self, request):
         """Handle GET requests to get all game types
+
         Returns:
             Response -- JSON serialized list of game types
         """
@@ -45,6 +47,7 @@ class GameTypes(ViewSet):
 
 class GameTypeSerializer(serializers.HyperlinkedModelSerializer):
     """JSON serializer for game types
+
     Arguments:
         serializers
     """

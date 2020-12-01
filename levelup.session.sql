@@ -1,1 +1,1 @@
-SELECT * FROM levelupapi_game;
+SELECT * FROM auth_user;
